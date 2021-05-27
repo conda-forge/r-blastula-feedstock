@@ -5,11 +5,9 @@ Home: https://github.com/rich-iannone/blastula
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-blastula-feedstock/blob/master/LICENSE.txt)
 
 Summary: Compose and send out responsive HTML email messages that render perfectly across a range of email clients and device sizes. Helper functions let the user insert embedded images, web link buttons, and 'ggplot2' plot objects into the message body. Messages can be sent through an 'SMTP' server, through the 'RStudio Connect' service, or through the 'Mailgun' API service <http://mailgun.com/>.
-
-
 
 Current build status
 ====================
@@ -38,6 +36,7 @@ Installing `r-blastula` from the `conda-forge` channel can be achieved by adding
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-blastula` can be installed with:
@@ -108,9 +107,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
