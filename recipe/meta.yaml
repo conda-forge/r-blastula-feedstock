@@ -1,4 +1,4 @@
-{% set version = '0.3.2' %}
+{% set version = "0.3.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/blastula_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/blastula/blastula_{{ version }}.tar.gz
-  sha256: cccf7620aeb2c278b731bece72b3c327f29dd1743a6eabd0cd7847b4ba999520
+  sha256: b1603c834e56e906c84965a79a5b32068f4661dd23818c789327f254cd77ec58
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -70,14 +70,11 @@ test:
 about:
   home: https://github.com/rich-iannone/blastula
   license: MIT
-  summary: Compose and send out responsive HTML email messages that render perfectly across a
-    range of email clients and device sizes. Helper functions let the user insert embedded
-    images, web link buttons, and 'ggplot2' plot objects into the message body. Messages
-    can be sent through an 'SMTP' server, through the 'RStudio Connect' service, or
-    through the 'Mailgun' API service <http://mailgun.com/>.
+  summary: Compose and send out responsive HTML email messages that render perfectly across a range of email clients and device sizes. Helper functions let the user insert embedded images, web link buttons, and 'ggplot2' plot objects into the message body. Messages can be sent through an 'SMTP' server, through the 'RStudio
+    Connect' service, or through the 'Mailgun' API service <http://mailgun.com/>.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
