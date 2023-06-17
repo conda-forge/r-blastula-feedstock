@@ -1,11 +1,11 @@
-About r-blastula
-================
+About r-blastula-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-blastula-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/rich-iannone/blastula
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-blastula-feedstock/blob/main/LICENSE.txt)
 
 Summary: Compose and send out responsive HTML email messages that render perfectly across a range of email clients and device sizes. Helper functions let the user insert embedded images, web link buttons, and 'ggplot2' plot objects into the message body. Messages can be sent through an 'SMTP' server, through the 'RStudio Connect' service, or through the 'Mailgun' API service <http://mailgun.com/>.
 
