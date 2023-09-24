@@ -1,4 +1,4 @@
-{% set version = "0.3.3" %}
+{% set version = "0.3.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/blastula_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/blastula/blastula_{{ version }}.tar.gz
-  sha256: b1603c834e56e906c84965a79a5b32068f4661dd23818c789327f254cd77ec58
+  sha256: d4e7c90e8631935b6a35cab6460c9fc11d14d693571c40d5499eee9215a3ae29
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
