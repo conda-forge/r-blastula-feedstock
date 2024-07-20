@@ -1,6 +1,5 @@
 {% set version = "0.3.5" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-blastula
@@ -13,8 +12,7 @@ source:
   sha256: 8b08fd317cd5daf4a840384429f4ef1e5c14c042197c45036659e5f63d1df6de
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
